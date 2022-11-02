@@ -23,7 +23,12 @@ function ListaPersonajes() {
 
     <div className="container">
 
+        <div class="glitch-wrapper">
+          <div class="glitch" data-glitch="Rick And Morty">Rick And Morty</div>
+        </div>
+
         <div className="container-titleAndNavbar animate__animated animate__fadeInDown">
+          
             <h1>Rick And Morty</h1>
 
             <Navbar
