@@ -291,10 +291,10 @@ h1{
 .personajeContainer{
   border-radius: 3px;
   padding: 20px;
-  background: rgba(32,35,41,0.8);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
-  border: 1px solid rgba(32,35,41,0.4);
+  background: rgba(32,35,41,0.65);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  border: 1px solid rgba(32,35,41,0.325);
 }
 
 .personajeContainer:hover {
