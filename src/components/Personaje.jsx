@@ -1,5 +1,17 @@
 function Personaje ( { name, image, status, gender, origin, location, species } ) {
 
+    // Función para traducir valores desconocidos y estados
+    const traducirValor = (valor) => {
+        const traducciones = {
+            "unknown": "Desconocido",
+            "Dead": "Muerto",
+            "Alive": "Vivo",
+            "Male": "Masculino",
+            "Female": "Femenino"
+        };
+        return traducciones[valor] || valor;
+    };
+
     return(
 
         <div className="personajeContainer">
@@ -12,27 +24,27 @@ function Personaje ( { name, image, status, gender, origin, location, species } 
 
             <div className="personajeContainer-data">
                 <p>Estado:</p>
-                <p>{status}</p>
+                <p>{traducirValor(status)}</p>
             </div>
 
             <div className="personajeContainer-data">
                 <p>Especie:</p>
-                <p>{species}</p>
+                <p>{traducirValor(species)}</p>
             </div>
 
             <div className="personajeContainer-data">
                 <p>Sexo:</p>
-                <p>{gender}</p>
+                <p>{traducirValor(gender)}</p>
             </div>
 
             <div className="personajeContainer-data">
                 <p>Origen:</p>
-                <p>{origin}</p>
+                <p>{traducirValor(origin)}</p>
             </div>
 
             <div className="personajeContainer-data">
                 <p>Ultima Ubicacion:</p>
-                <p>{location}</p>
+                <p>{traducirValor(location)}</p>
             </div>
 
         </div>
